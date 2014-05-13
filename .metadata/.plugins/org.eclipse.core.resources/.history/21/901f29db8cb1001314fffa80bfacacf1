@@ -1,0 +1,24 @@
+package com.input;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class FileInputStreamEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FileInputStream fis = null;
+		int readbyte = 0;
+		
+		try {
+			
+		} catch (IOException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}finally{
+			
+		}
+	}
+
+}

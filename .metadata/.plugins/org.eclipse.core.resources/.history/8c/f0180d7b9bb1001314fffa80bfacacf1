@@ -1,0 +1,13 @@
+package com.writer;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileWriterEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

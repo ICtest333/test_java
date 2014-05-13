@@ -1,0 +1,27 @@
+package com.basic;
+
+
+
+public class ThreadEx02 implements Runnable{
+
+	@Override
+	public void run() {
+		for(int i=0;i<10;i++){
+			try {
+				Thread.sleep(1000);//지정된 시간만큼 수행을 멈춤
+				            //1/1000(밀리세컨드)
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			System.out.print("스레드 이름 : "+Thread.currentThread().getName());
+			System.out.println(", temp value : "+i);
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ThreadEx02 th = new ThreadEx02();
+	}
+
+}

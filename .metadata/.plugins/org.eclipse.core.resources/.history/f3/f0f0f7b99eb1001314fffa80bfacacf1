@@ -1,0 +1,18 @@
+package com.serial;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.IOException;
+
+public class CustomerMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("=== °´Ã¼ Á÷·ÄÈ­ ÇÏ±â ===");
+		
+		Customer c = new Customer("È«±æµ¿");
+		
+	}
+
+}
+

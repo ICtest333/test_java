@@ -1,0 +1,16 @@
+public class ForEx02 {
+	public static void main(String[] args){
+		java.util.Scanner input =
+				new java.util.Scanner(System.in);
+		
+		System.out.print("단 입력>");
+		int dan = input.nextInt();
+		
+		System.out.println("===" + dan + "단===");
+		
+		for(int i=1;i<=9;i++){
+			System.out.println(dan+"*"+i+"="+(dan*i));
+		}
+		
+	}
+}

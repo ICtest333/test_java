@@ -1,0 +1,12 @@
+package com.basic;
+
+import java.lang.Runnable;
+
+public class ThreadEx02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

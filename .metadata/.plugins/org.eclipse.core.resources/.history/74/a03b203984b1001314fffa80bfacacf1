@@ -1,0 +1,18 @@
+package com.file;
+
+import java.io.File;
+
+public class FileEx01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String path = "c:\\";
+		
+		File f = new File(path);
+		
+		if(!f.exists() || !f.isDirectory()){
+			
+		}
+	}
+
+}

@@ -1,0 +1,27 @@
+package com.map;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.Iterator;
+
+public class HashMapEx02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<Integer, String> map = new HashMap<Integer, String>();
+		map.put(new Integer(1), "Berlin");
+		map.put(12, "Paris");
+		map.put(100, "Seoul");
+		map.put(5, "New York");
+		
+		System.out.println(map);
+		
+		Set<Integer> s = map.keySet();
+		Iterator<Integer> keys = s.iterator();
+		
+		System.out.println(key+", "+map.get(key));
+		
+	}
+
+}

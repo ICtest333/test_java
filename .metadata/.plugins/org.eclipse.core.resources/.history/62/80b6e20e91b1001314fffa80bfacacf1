@@ -1,0 +1,21 @@
+package com.output;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class FileOutputStreamEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FileOutputStream fos = null;
+		
+		try {
+			fos = new FileOutputStream("fileout.txt");
+		} catch (Exception e) {
+			// TODO: handle exception
+		} finally {
+			
+		}
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.list;
+
+import java.util.Vector;
+
+public class VectorEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Vector<Double> v = new Vector<Double>();
+		//자원추가
+		v.add(100.3);
+		v.add(3.14);
+		v.add(1000.);
+		
+		//출력(확장for문)
+		for(Double n : v){
+			System.out.println(n);
+		}
+	}
+
+}

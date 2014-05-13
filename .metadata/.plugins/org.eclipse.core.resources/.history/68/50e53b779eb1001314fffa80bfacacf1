@@ -1,0 +1,16 @@
+package com.serial;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+public class CustomerMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Customer c = new Customer("ȫ�浿");
+		System.out.println(c);
+		System.out.println(c.toString());
+	}
+
+}
+

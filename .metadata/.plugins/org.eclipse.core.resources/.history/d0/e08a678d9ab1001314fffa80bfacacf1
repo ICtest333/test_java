@@ -1,0 +1,20 @@
+package com.reader;
+
+import java.io.FileReader;
+import java.io.IOException;
+
+public class FileReaderEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FileReader fr = null;
+		try {
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			
+		}
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.map;
+
+import java.util.HashMap;
+
+public class HashMapEx01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<String,Integer> map = new HashMap<String,Integer>();
+		
+		map.put("해리", new Integer(95));
+		map.put("헤르미온느", new Integer(100));
+		map.put("론", new Integer(85));
+		map.put("드레이코", new Integer(93));
+		map.put("네빌", new Integer(70));
+		
+		
+		System.out.println(map);
+	}
+
+}

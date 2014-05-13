@@ -1,0 +1,38 @@
+package com.basic;
+
+public class ThreadEx04{
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ThreadTest01 tt01 = new ThreadTest01();
+		ThreadTest02 tt02 = new ThreadTest02();
+		
+		tt02.setPriority(8);
+		
+		System.out.println("tt01(-) : " + tt01.getPriority());
+		System.out.println("tt02(|) : " + tt02.getPriority());
+		
+		tt01.start();
+		tt02.start();
+	}
+
+}
+
+class ThreadTest01 extends Thread{
+	@Override
+	public void run() {
+		for(int i=0;i<300;i++){
+			System.out.print("-");
+		}
+	}
+}
+
+class ThreadTest02 extends Thread{
+	@Override
+	public void run() {
+		for(int i=0;i<300;i++){
+			System.out.print("|");
+			
+		}
+	}
+}

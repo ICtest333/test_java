@@ -1,0 +1,16 @@
+package com.map;
+
+import java.util.Hashtable;
+
+public class HashtableEx01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Hashtable<String,Double> ht = new Hashtable<String,Double>();
+		ht.put("천송이", new Double(167.3));
+		ht.put("도민준", new Double(181.2));
+		ht.put("이재경", new Double(185.5));
+		ht.put("유세미", new Double(161.7));
+	}
+
+}

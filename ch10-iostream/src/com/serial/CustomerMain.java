@@ -1,0 +1,35 @@
+package com.serial;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.IOException;
+
+public class CustomerMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("=== 객체 직렬화 하기 ===");
+		FileOutputStream fos = null;
+		ObjectOutputStream oos = null;
+		
+		//직렬화할 객체 생성
+		Customer c = new Customer("홍길동");
+		
+		try {
+			fos = new FileOutputStream("object.ser");
+			oos = new ObjectOutputStream(fos);
+			oos.writeObject(c);//객체 직렬화 수행
+			
+			System.out.println("객체 직렬화 완료");
+		} catch (IOException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} finally {
+			if(oos!=null)try{oos.close();}catch(IOException e){}
+			if(fos!=null)try{fos.close();}catch(IOException e){}			
+		}
+		
+	}
+
+}
+

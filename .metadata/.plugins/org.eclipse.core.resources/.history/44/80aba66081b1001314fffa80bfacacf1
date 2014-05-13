@@ -1,0 +1,30 @@
+package com.basic;
+
+class ATM implements Runnable{
+	private long depositeMoney = 10000;//공유자원
+	
+	@Override
+	public void run() {
+		
+		
+	}
+	
+	//임계영역
+	public void withDraw(long howMuch){
+		if(depositeMoney>0){
+			depositeMoney -= howMuch;
+			System.out.println(Thread.currentThread().getName()+", "+depositeMoney);
+		}else{
+
+		}
+	}
+}
+
+public class SynchronizedEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
